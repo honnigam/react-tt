@@ -1,10 +1,15 @@
-export function Tweet(props) {
+interface TweetProps {
+  user: string
+  children: string
+  likes?: number
+}
+
+export function Tweet(props: TweetProps) {
   return (
     <div>
       <strong>{props.user}</strong>
-      <p>{props.content}</p>
       <p>{props.children}</p> {/* referenciado no main.tsx como children */}
-      <button>Like</button>
+      <button>Like {props.likes ?? 0}</button>
     </div>
   ) 
 }

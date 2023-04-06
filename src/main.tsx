@@ -7,13 +7,17 @@ import {Tweet} from './components/Tweet'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <div>
-      <Tweet user="Lucas"   content="meu primeiro tweet"/>
-      <Tweet user="Vanessa" content="meu segundo tweet"/>
-      <Tweet user="William">
-      Testaaaando          {/* //metodo children */}
+      <Tweet user="Vanessa" likes ={10}>
+        Teste 1 
       </Tweet> 
-      <Tweet user="Diego"> {/* //metodo children */}
-      Testando
+      <Tweet user="William">
+        Teste 2   
+      </Tweet> 
+      <Tweet user="Diego"> 
+        Teste 3
+      </Tweet>
+      <Tweet user="Lucas"> 
+        Teste 4
       </Tweet>
     </div> 
   </React.StrictMode>,
