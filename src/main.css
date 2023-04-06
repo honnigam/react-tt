@@ -2,3 +2,9 @@ body {
   background-color: #121214;
   color: #e1e1e6;
 }
+
+.tweet {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 12px;
+}
