@@ -6,20 +6,9 @@ import './main.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div>
-      <Tweet user="Vanessa" likes ={10}>
-        Teste 1 
-      </Tweet> 
-      <Tweet user="William">
-        Teste 2   
-      </Tweet> 
-      <Tweet user="Diego"> 
-        Teste 3
-      </Tweet>
-      <Tweet user="Lucas"> 
-        Teste 4
-      </Tweet>
-    </div> 
-    
+    <div className="layout">
+      <aside className="sidebar"></aside>
+      <div className="content"></div>
+    </div>
   </React.StrictMode>,
 )

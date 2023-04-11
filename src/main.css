@@ -1,10 +1,26 @@
-body {
-  background-color: #121214;
-  color: #e1e1e6;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-.tweet {
-  border: 1px solid #ccc;
-  padding: 16px;
-  margin: 12px;
+:root{
+  --twitter-blue: #1da1f2
+    
+}
+body {
+  color: #0f1419;
+  -webkit-font-smoothing: antialiased; /* fonte nitida em browser tipo google */
+}
+
+body, input, textarea, button {
+  font: 400 1rem Roboto, sans-serif; /* sempre usar medida REM para melhor acessibilidade do usuário */
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
 }
