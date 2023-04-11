@@ -20,5 +20,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         Teste 4
       </Tweet>
     </div> 
+    
   </React.StrictMode>,
 )
