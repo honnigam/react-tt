@@ -81,9 +81,14 @@ a {
   
 }
 
+.main-navigation a.active {
+  color: var(--twitter-blue);
+}
+
 .main-navigation a svg {
   width: 2rem;
   height: 2rem;
+
 }
 
 .content{

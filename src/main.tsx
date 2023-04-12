@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {Tweet} from './components/Tweet'
 import './main.css'
-import {House} from 'phosphor-react'
+import {House, Hash, Envelope, Bell, BookmarkSimple, FileText, User, DotsThreeCircle} from 'phosphor-react'
 import twitterLogo from './assets/logo-twitter.svg'
 //components: pequenas partes de interface reutilizaveis
 
@@ -13,16 +13,36 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <img className="logo" src={twitterLogo} alt="logo" />
       
       <nav className="main-navigation">
-      <a href="">
-        <House/> Home
+      <a className="active" href="">
+        <House weight="fill"/> Home
       </a>
-      <a href="">Explore</a>
-      <a href="">Notifications</a>
-      <a href="">Messages</a>
-      <a href="">Bookmarks</a> 
-      <a href="">Lists</a>
-      <a href="">Profile</a>
-      <a href="">More</a>
+      <a href="">
+        <Hash /> Explore
+      </a>
+      <a href="">
+        <Bell/>
+        Notifications
+      </a>
+      <a href="">
+        <Envelope />
+        Messages
+      </a>
+      <a href="">
+        <BookmarkSimple />
+        Bookmarks
+      </a> 
+      <a href="">
+        <FileText />
+        Lists
+      </a>
+      <a href="">
+        <User />
+        Profile
+      </a>
+      <a href="">
+        <DotsThreeCircle />
+        More
+      </a>
       </nav>
 
       <button className="new-tweet" type="button">Tweet</button>
