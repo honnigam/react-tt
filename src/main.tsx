@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {Tweet} from './components/Tweet'
 import './main.css'
+import {House} from 'phosphor-react'
 import twitterLogo from './assets/logo-twitter.svg'
 //components: pequenas partes de interface reutilizaveis
 
@@ -12,7 +13,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <img className="logo" src={twitterLogo} alt="logo" />
       
       <nav className="main-navigation">
-      <a href="">Home</a>
+      <a href="">
+        <House/> Home
+      </a>
       <a href="">Explore</a>
       <a href="">Notifications</a>
       <a href="">Messages</a>
