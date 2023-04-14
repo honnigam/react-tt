@@ -5,6 +5,7 @@ import './main.css'
 import twitterLogo from './assets/logo-twitter.svg'
 import { Sidebar } from './components/Sidebar'
 import { Header } from './components/Header'
+import { Separator } from './components/Separator'
 //components: pequenas partes de interface reutilizaveis
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -13,8 +14,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Sidebar />
       <div className="content">
         <main className="timeline">
-          <Header/>
-          
+          <Header title="Home" />
+
           <form className="new-tweet-form">
             <label htmlFor="tweet">
               <img src="https://github.com/honnigam.png" alt="Lucas Barcelos" />
@@ -22,9 +23,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             </label>
             <button type="submit">Tweet</button>
           </form>
-          <div className="separator"/>
-          <Tweet />
-          <Tweet />
+          <Separator />          
           <Tweet />
           <Tweet />
         </main>
