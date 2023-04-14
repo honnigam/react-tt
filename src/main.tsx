@@ -8,6 +8,13 @@ import { Header } from './components/Header'
 import { Separator } from './components/Separator'
 //components: pequenas partes de interface reutilizaveis
 
+
+const tweets = [
+  'Meu primeiro Tweet',
+  'Teste',
+  'Deu certo tweetar'
+]
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <div className="layout">
@@ -23,9 +30,13 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             </label>
             <button type="submit">Tweet</button>
           </form>
-          <Separator />          
-          <Tweet />
-          <Tweet />
+          <Separator />
+
+          {/* .map e key= usado pra determinar a posição e retornar */} 
+          {tweets.map(tweet => {
+            return <Tweet key={tweet} content={tweet} />
+          })}          
+
         </main>
       </div>
     </div>
