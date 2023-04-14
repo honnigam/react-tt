@@ -51,7 +51,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <main className="timeline">
           <div className="timeline-header">
             Home
-            <Sparkle />
+          <Sparkle />
           </div>
 
           <form className="new-tweet-form">
@@ -61,6 +61,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             </label>
             <button type="submit">Tweet</button>
           </form>
+          <div className="separator"/>
+          <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
         </main>
       </div>
     </div>
