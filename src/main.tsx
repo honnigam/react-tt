@@ -6,6 +6,8 @@ import twitterLogo from './assets/logo-twitter.svg'
 import { Sidebar } from './components/Sidebar'
 import { Header } from './components/Header'
 import { Separator } from './components/Separator'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
 //components: pequenas partes de interface reutilizaveis
 
 
@@ -22,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <div className="content">
         <main className="timeline">
           <Header title="Home" />
+          <RouterProvider router ={router} />
 
           <form className="new-tweet-form">
             <label htmlFor="tweet">
