@@ -13,8 +13,6 @@ export function Timeline () {
   return (
   <main className="timeline">
           <Header title="Home" />
-
-
           <form className="new-tweet-form">
             <label htmlFor="tweet">
               <img src="https://github.com/honnigam.png" alt="Lucas Barcelos" />
