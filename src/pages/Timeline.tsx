@@ -10,6 +10,7 @@ const tweets = [
 ]
 
 export function Timeline () {
+  return (
   <main className="timeline">
           <Header title="Home" />
 
@@ -29,4 +30,5 @@ export function Timeline () {
           })}          
 
         </main>
+)
 }
