@@ -8,6 +8,7 @@ let newTweet = ''
 
 export function Timeline () {
   //estado
+  const [newTweet, setNewTweet] = useState('')
   const [tweets, setTweets] = useState([
     'Meu primeiro Tweet',
     'Teste',
@@ -16,7 +17,8 @@ export function Timeline () {
 
   function createNewTweet(event:FormEvent) {
     event.preventDefault()
-    tweets.push(newTweet)
+    setTweets([newTweet, ...tweets])
+    setNewTweet('')
   }
   return (
   <main className="timeline">
@@ -25,8 +27,11 @@ export function Timeline () {
           <form onSubmit={createNewTweet} className="new-tweet-form">
             <label htmlFor="tweet">
               <img src="https://github.com/honnigam.png" alt="Lucas Barcelos" />
-              <textarea id="tweet" placeholder="What's happening?" onChange={ (event) => {
-                newTweet = event.target.value} }/>     
+              <textarea id="tweet" 
+              placeholder="What's happening?"
+              value={newTweet} 
+              onChange={ (event) => {
+                setNewTweet(event.target.value)}}/>     
             </label>
             <button type="submit">Tweet</button>
           </form>
