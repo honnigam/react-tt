@@ -12,31 +12,32 @@ export function Sidebar () {
     <House weight="fill"/> Home
   </NavLink>
   <a href="">
-    <Hash /> Explore
+    <Hash /> 
+   <span> Explore </span>
   </a>
   <a href="">
     <Bell/>
-    Notifications
+   <span> Notifications </span>
   </a>
   <a href="">
     <Envelope />
-    Messages
+   <span> Messages </span>
   </a>
   <a href="">
     <BookmarkSimple />
-    Bookmarks
+   <span> Bookmarks </span>
   </a> 
   <a href="">
     <FileText />
-    Lists
+   <span> Lists </span>
   </a>
   <a href="">
     <User />
-    Profile
+   <span> Profile </span>
   </a>
   <a href="">
     <DotsThreeCircle />
-    More
+   <span> More </span>
   </a>
   </nav>
 
