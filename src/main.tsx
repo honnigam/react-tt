@@ -7,7 +7,7 @@ import './main.css'
 //components: pequenas partes de interface reutilizaveis
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+ /*  <React.StrictMode> */
     <RouterProvider router ={router} />
-  </React.StrictMode>,
+/*   </React.StrictMode>, */
 )
