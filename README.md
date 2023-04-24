@@ -1,4 +1,4 @@
-<h1 align="center"> Tweeter clone </h1>
+<h1 align="center"> Twitter clone </h1>
 
 
 <p align="center">
