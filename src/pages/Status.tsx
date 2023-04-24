@@ -3,6 +3,7 @@ import { Header } from "../components/Header"
 import { Separator } from "../components/Separator"
 import { Tweet } from "../components/Tweet"
 import './Status.css'
+import { PaperPlaneRight } from "phosphor-react"
 
 /**
  * Fluxo de renderização (do zero): 
@@ -67,7 +68,10 @@ export function Status () {
         onChange={(event) => {setNewAnswer(event.target.value)}}
         />     
       </label>
-      <button type="submit">Answer</button>
+      <button type="submit">
+        <PaperPlaneRight/>
+        <span> Answer </span>
+      </button>
     </form>
    
   
