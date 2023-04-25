@@ -12,7 +12,7 @@ export const router = createBrowserRouter ([
     element: <Default />,
     children: [
       {
-        path: '/react-tt',
+        path: '/',
         element: <Timeline/>
       },
     
