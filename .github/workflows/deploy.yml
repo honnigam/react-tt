@@ -3,11 +3,11 @@ name: deploy
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   build:
-    name: Build
+    name: build
     runs-on: ubuntu-latest
 
     steps:
@@ -32,5 +32,5 @@ jobs:
           path: ./dist
 
   deploy:
-    name: Deploy
+    name: deploy
     needs: build
